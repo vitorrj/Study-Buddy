@@ -11,6 +11,14 @@ import UIKit
 private let reuseIdentifier = "Session Cell"
 
 class SessionsViewController: UICollectionViewController {
+    var sessions: [Session] = [Session(emoji: "🐶", subject: "Dog"),
+    Session(emoji: "🐱", subject: "Cat"),
+    Session(emoji: "🐭", subject: "Mouse"),
+    Session(emoji: "🐹", subject: "Hamster"),
+    Session(emoji: "🐰", subject: "Rabbit"),
+    Session(emoji: "🦊", subject: "Fox"),
+    Session(emoji: "🐻", subject: "Bear"),
+    Session(emoji: "🐼", subject: "Panda")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,17 +32,21 @@ class SessionsViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
         navigationItem.searchController = UISearchController()
         navigationItem.searchController?.searchBar.placeholder = "Search for sessions!"
+        sessions.shuffle()
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        if segue.identifier == "Join A Session", let index = collectionView.indexPathsForSelectedItems?.first {
+            let navigationController = segue.destination as! UINavigationController
+            let topViewController = navigationController.topViewController as! JoinSessionViewController
+            topViewController.session = sessions[index.row]
+        }
     }
-    */
 
     // MARK: UICollectionViewDataSource
 
@@ -47,11 +59,11 @@ class SessionsViewController: UICollectionViewController {
         if section == 0 {
             return 1
         } else {
-            return 10
+            return sessions.count
         }
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SessionCollectionViewCell
 
         // Configure the cell
         if indexPath.section == 0 {
@@ -61,6 +73,8 @@ class SessionsViewController: UICollectionViewController {
         }
         
         cell.layer.cornerRadius = 10
+        cell.emojiLabel.text = sessions[indexPath.item].emoji
+        cell.subjectLabel.text = sessions[indexPath.item].subject
     
         return cell
     }

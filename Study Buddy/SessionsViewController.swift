@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Session Cell"
 
-class SessionsCollectionViewController: UICollectionViewController {
+class SessionsViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,7 +98,7 @@ class SessionsCollectionViewController: UICollectionViewController {
 
 }
 
-extension SessionsCollectionViewController: UICollectionViewDelegateFlowLayout {
+extension SessionsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.width - 40
         let height = CGFloat(75)

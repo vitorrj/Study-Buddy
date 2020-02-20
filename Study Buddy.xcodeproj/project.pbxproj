@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81C9A7BB23FF13E000E7F9C2 /* SessionsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C9A7BA23FF13E000E7F9C2 /* SessionsCollectionViewController.swift */; };
+		814C1BDC23FF3FEE0093E60A /* HostASessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814C1BDB23FF3FEE0093E60A /* HostASessionViewController.swift */; };
+		81C9A7BB23FF13E000E7F9C2 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C9A7BA23FF13E000E7F9C2 /* SessionsViewController.swift */; };
 		9184ED2123F6E01F00FB898C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184ED2023F6E01F00FB898C /* AppDelegate.swift */; };
 		9184ED2323F6E01F00FB898C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184ED2223F6E01F00FB898C /* SceneDelegate.swift */; };
 		9184ED2A23F6E01F00FB898C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9184ED2823F6E01F00FB898C /* Main.storyboard */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		81C9A7BA23FF13E000E7F9C2 /* SessionsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsCollectionViewController.swift; sourceTree = "<group>"; };
+		814C1BDB23FF3FEE0093E60A /* HostASessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostASessionViewController.swift; sourceTree = "<group>"; };
+		81C9A7BA23FF13E000E7F9C2 /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
 		9184ED1D23F6E01F00FB898C /* Study Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9184ED2023F6E01F00FB898C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9184ED2223F6E01F00FB898C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +62,8 @@
 			children = (
 				9184ED2023F6E01F00FB898C /* AppDelegate.swift */,
 				9184ED2223F6E01F00FB898C /* SceneDelegate.swift */,
-				81C9A7BA23FF13E000E7F9C2 /* SessionsCollectionViewController.swift */,
+				81C9A7BA23FF13E000E7F9C2 /* SessionsViewController.swift */,
+				814C1BDB23FF3FEE0093E60A /* HostASessionViewController.swift */,
 				9184ED2823F6E01F00FB898C /* Main.storyboard */,
 				9184ED2E23F6E02000FB898C /* Assets.xcassets */,
 				9184ED3023F6E02000FB898C /* LaunchScreen.storyboard */,
@@ -141,8 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814C1BDC23FF3FEE0093E60A /* HostASessionViewController.swift in Sources */,
 				9184ED2D23F6E01F00FB898C /* Study_Buddy.xcdatamodeld in Sources */,
-				81C9A7BB23FF13E000E7F9C2 /* SessionsCollectionViewController.swift in Sources */,
+				81C9A7BB23FF13E000E7F9C2 /* SessionsViewController.swift in Sources */,
 				9184ED2123F6E01F00FB898C /* AppDelegate.swift in Sources */,
 				9184ED2323F6E01F00FB898C /* SceneDelegate.swift in Sources */,
 			);

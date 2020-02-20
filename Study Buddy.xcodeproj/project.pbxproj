@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81C9A7BB23FF13E000E7F9C2 /* SessionsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C9A7BA23FF13E000E7F9C2 /* SessionsCollectionViewController.swift */; };
 		9184ED2123F6E01F00FB898C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184ED2023F6E01F00FB898C /* AppDelegate.swift */; };
 		9184ED2323F6E01F00FB898C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184ED2223F6E01F00FB898C /* SceneDelegate.swift */; };
-		9184ED2523F6E01F00FB898C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184ED2423F6E01F00FB898C /* FirstViewController.swift */; };
-		9184ED2723F6E01F00FB898C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184ED2623F6E01F00FB898C /* SecondViewController.swift */; };
 		9184ED2A23F6E01F00FB898C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9184ED2823F6E01F00FB898C /* Main.storyboard */; };
 		9184ED2D23F6E01F00FB898C /* Study_Buddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9184ED2B23F6E01F00FB898C /* Study_Buddy.xcdatamodeld */; };
 		9184ED2F23F6E02000FB898C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9184ED2E23F6E02000FB898C /* Assets.xcassets */; };
@@ -18,11 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81C9A7BA23FF13E000E7F9C2 /* SessionsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsCollectionViewController.swift; sourceTree = "<group>"; };
 		9184ED1D23F6E01F00FB898C /* Study Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9184ED2023F6E01F00FB898C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9184ED2223F6E01F00FB898C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9184ED2423F6E01F00FB898C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9184ED2623F6E01F00FB898C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9184ED2923F6E01F00FB898C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9184ED2C23F6E01F00FB898C /* Study_Buddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Study_Buddy.xcdatamodel; sourceTree = "<group>"; };
 		9184ED2E23F6E02000FB898C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,8 +60,7 @@
 			children = (
 				9184ED2023F6E01F00FB898C /* AppDelegate.swift */,
 				9184ED2223F6E01F00FB898C /* SceneDelegate.swift */,
-				9184ED2423F6E01F00FB898C /* FirstViewController.swift */,
-				9184ED2623F6E01F00FB898C /* SecondViewController.swift */,
+				81C9A7BA23FF13E000E7F9C2 /* SessionsCollectionViewController.swift */,
 				9184ED2823F6E01F00FB898C /* Main.storyboard */,
 				9184ED2E23F6E02000FB898C /* Assets.xcassets */,
 				9184ED3023F6E02000FB898C /* LaunchScreen.storyboard */,
@@ -144,9 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9184ED2723F6E01F00FB898C /* SecondViewController.swift in Sources */,
 				9184ED2D23F6E01F00FB898C /* Study_Buddy.xcdatamodeld in Sources */,
-				9184ED2523F6E01F00FB898C /* FirstViewController.swift in Sources */,
+				81C9A7BB23FF13E000E7F9C2 /* SessionsCollectionViewController.swift in Sources */,
 				9184ED2123F6E01F00FB898C /* AppDelegate.swift in Sources */,
 				9184ED2323F6E01F00FB898C /* SceneDelegate.swift in Sources */,
 			);
@@ -293,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAFG2GFCLK;
 				INFOPLIST_FILE = "Study Buddy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAFG2GFCLK;
 				INFOPLIST_FILE = "Study Buddy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
